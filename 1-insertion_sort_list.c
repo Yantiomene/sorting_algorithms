@@ -10,7 +10,7 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *ptr, *curr, *left_top;
 
-	if (!*list || !(*list)->next)
+	if (!list || !*list || !(*list)->next)
 		return;
 	ptr = (*list)->next;
 	while (ptr)
